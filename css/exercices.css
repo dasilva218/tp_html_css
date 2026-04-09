@@ -1,0 +1,11 @@
+/* ── Exercice 1 — Sélecteurs de base ── */
+   #title {
+  color: red;
+  text-transform: uppercase;
+}
+ 
+    .text {
+      color: rgb(4, 13, 141);
+    }
+ 
+   
