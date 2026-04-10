@@ -10,6 +10,7 @@ src/
 └── pages/
 selecteur
 textes
+fond_bordure
 
 
 ### Consignes
@@ -23,6 +24,7 @@ textes
 
 Exercice 2 = Sélecteurs
 Exercice 3 = textes
+Exercice 4 = fond_bordure
 
 Chaque lien doit permettre d'accéder à la page correspondante dans le dossier `pages`.
 

@@ -1,0 +1,128 @@
+/* ── Exercice 1 — Les bases du texte ── */
+    .paragraph {
+      color: #c20707;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
+    /* ── Exercice 2 — Gras, italique, transformation ── */
+    .ex2-titre {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+ 
+    .ex2-paragraphe {
+      font-style: italic;
+    }
+    /* ── Exercice 3 — Alignement ── */
+    .ex3-gauche   { text-align: left; }
+    .ex3-centre   { text-align: center; }
+    .ex3-droite   { text-align: right; }
+    .ex3-justifie { text-align: justify; }
+ 
+    /* ── Exercice 4 — Espacement des lignes ── */
+    .ex4-paragraphe {
+      line-height: 3;
+    }
+ 
+    /* ── Exercice 5 — Lettres et mots ── */
+    .ex5-titre {
+      letter-spacing: 8px;
+    }
+ 
+    .ex5-paragraphe {
+      word-spacing: 14px;
+    }
+     /* ── Exercice 6 — Décoration de lien ── */
+    .ex6-lien {
+      text-decoration: none;
+      color: #3498db;
+    }
+ 
+    .ex6-lien:hover {
+      text-decoration: underline;
+    }
+ 
+    /* ── Exercice 7 — Ombre sur le texte ── */
+    .ex7-titre {
+      text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+     /* ── Exercice 8 — Police personnalisée ── */
+    body {
+      font-family: 'Poppins', sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+ 
+    section {
+      margin-bottom: 3rem;
+    }
+ 
+    h2.label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #999;
+      margin-bottom: 1rem;
+    }
+ 
+    /* ── Exercice 9 — Hiérarchie typographique ── */
+    .ex9-h1 {
+      font-size: 2rem;
+      color: #02172c;
+      margin-bottom: 0.5rem;
+    }
+ 
+    .ex9-h2 {
+      font-size: 1.25rem;
+      color: #7f8c8d;
+      margin-bottom: 1rem;
+    }
+ 
+    .ex9-p {
+      font-size: 1rem;
+      color: #4d4747;
+      line-height: 1.7;
+    }
+ 
+    /* ── Exercice 10 — Carte stylée ── */
+    .card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 400px;
+    }
+ 
+    .card-titre {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #033261;
+      letter-spacing: 1px;
+      margin-bottom: 0.25rem;
+    }
+ 
+    .card-sous-titre {
+      font-size: 0.95rem;
+      color: #0a0000;
+      margin-bottom: 1rem;
+    }
+ 
+    .card-texte {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #070000;
+      margin-bottom: 1.25rem;
+      word-spacing: 2px;
+    }
+ 
+    .card-lien {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+ 
+    .card-lien:hover {
+      text-decoration: underline;
+    }
