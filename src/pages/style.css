@@ -1,0 +1,32 @@
+/* Reset & Global */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Sélecteurs de base */
+h1 { color: red; }
+#title { text-transform: uppercase; }
+.text { color: blue; }
+
+/* Sélecteurs de relation */
+.container p { color: green; } /* Descendant */
+.container > p { color: red; border-left: 2px solid red; } /* Enfant direct */
+h2 + p { font-weight: bold; } /* Adjacent */
+h2 ~ p { color: #666; } /* Général */
+
+/* Sélecteurs d'attributs */
+input[type="text"] { border: 2px solid #3498db; }
+input[placeholder] { padding: 10px; background: #f4f4f4; }
+
+/* Pseudo-classes */
+li:hover { color: #e67e22; cursor: pointer; }
+li:first-child { font-weight: bold; }
+li:last-child { color: darkred; }
+
+/* nth-child */
+li:nth-child(even) { background-color: #f2f2f2; }
+li:nth-child(odd) { background-color: #ffffff; }
+
+/* Avancé */
+.card h3 { color: #2c3e50; }
+.card .description { font-style: italic; }
+.card p:not(.description) { opacity: 0.7; }
+.card p:nth-of-type(2) { color: blue; }

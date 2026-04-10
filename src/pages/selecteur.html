@@ -1,107 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>les sélecteurs</title>
+    <meta charset="UTF-8">
+    <title>Exercices - Sélecteurs</title>
+    <style>
+        /* Exercice 2 — Sélecteur universel */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: sans-serif; padding: 30px; line-height: 1.6; }
+
+        /* Exercice 1 - Sélecteurs de base */
+        h1#title { color: red; text-transform: uppercase; }
+        .text { color: blue; }
+
+        /* Exercice 3 & 4 — Descendants et Enfants */
+        .container p { color: green; } /* Tous les p dans .container */
+        .container > p { color: red; font-weight: bold; } /* Uniquement l'enfant direct */
+
+        /* Exercice 5 & 6 — Adjacents et Généraux */
+        h2 + p { color: darkmagenta; font-style: italic; } /* Le premier p après h2 */
+        h2 ~ p { border-left: 3px solid #ccc; padding-left: 10px; } /* Tous les p après h2 */
+
+        /* Exercice 7 — Attributs */
+        input[type="text"] { border: 2px solid #3498db; }
+        input[placeholder] { background: #fdfdfd; padding: 5px; }
+
+        /* Exercice 8 & 9 — Pseudo-classes & nth-child */
+        li:hover { color: orange; cursor: pointer; }
+        li:first-child { font-weight: bold; }
+        li:last-child { text-decoration: underline; }
+        li:nth-child(even) { background: #eee; }
+        li:nth-child(odd) { background: #fff; }
+
+        /* Exercice 10 — Combinés */
+        .card h3 { color: #2c3e50; }
+        .card .description { color: #7f8c8d; font-size: 0.9rem; }
+        .card p:not(.description) { border-bottom: 1px dashed #ddd; }
+    </style>
 </head>
-
 <body>
-  <main>
-    <!-- Les selecteurs permettent de cibler des éléments HTML pour leur appliquer des styles CSS. Il existe différents types de sélecteurs, tels que les sélecteurs de type, de classe, d'identifiant, d'attribut, et bien d'autres. En utilisant ces sélecteurs, vous pouvez personnaliser l'apparence de votre site web de manière précise et efficace. -->
-
-    <!-- Exercice 1 - Sélecteurs de base
-    Objectif : maîtriser element, .class, #id
-    Consigne :
-    Mettre le h1 en rouge
-    Mettre tous les .text en bleu
-    Mettre le #title en uppercase -->
+    <a href="../../index.html">← Retour</a>
+    
     <section id="selecteurs">
       <h1 id="title">Bienvenue</h1>
-      <p class="text">Paragraphe 1</p>
-      <p class="text">Paragraphe 2</p>
+      <p class="text">Paragraphe 1 (Classe .text en bleu)</p>
     </section>
-    <!-- Exercice 2 — Sélecteur universel
-    Objectif : utiliser *
-    Consigne :
-    Supprimer toutes les marges et paddings par défaut
-    Appliquer une box-sizing: border-box à tous les éléments -->
 
-    <!-- Exercice 3 — Sélecteur descendant
-    Objectif : cibler des éléments imbriqués
-    Consigne :
-    Mettre en vert tous les p dans .container -->
-
-    <!-- Exercice 4 — Sélecteur enfant direct
-    Objectif : utiliser >
-    Consigne :
-    Styliser uniquement les p enfants directs de .container en rouge
-    Ne pas toucher aux p imbriqués plus profondément -->
-    <section class="container">
-      <p>Paragraphe dans container</p>
+    <section class="container" style="margin: 20px 0;">
+      <p>Paragraphe enfant direct (Rouge)</p>
       <div>
-        <p>Paragraphe imbriqué dans container</p>
+        <p>Paragraphe imbriqué (Vert)</p>
       </div>
     </section>
 
-    <!-- Exercice 5 — Sélecteurs adjacents
-    Objectif : utiliser +
-    Consigne :
-    Styliser uniquement le premier p après h2 -->
-
-    <!-- Exercice 6 — Sélecteurs généraux
-    Objectif : utiliser ~
-    Consigne :
-    Styliser tous les p après le h2 -->
     <section>
-      <h2>Titre</h2>
-      <p>Paragraphe 1</p>
-      <p>Paragraphe 2</p>
+      <h2>Titre Section</h2>
+      <p>Paragraphe 1 (Adjacent)</p>
+      <p>Paragraphe 2 (Général)</p>
     </section>
 
-    <!-- Exercice 7 — Sélecteurs d’attributs
-    Objectif : cibler via attributs
-    Consigne :
-    Styliser uniquement l’input type="text"
-    Ajouter un style spécifique aux inputs avec placeholder -->
-    <section>
-      <input type="text" placeholder="Nom">
-      <input type="password" placeholder="Mot de passe">
-    </section>
-
-    <!-- Exercice 8 — Pseudo-classes
-    Objectif : :hover, :first-child, :last-child
-    Consigne :
-    Changer la couleur du li au hover
-    Styliser le premier élément
-    Styliser le dernier élément -->
-
-    <!-- Exercice 9 — nth-child (niveau intermédiaire)
-    Objectif : logique de sélection
-    Consigne :
-    Mettre en gris les éléments pairs
-    Mettre en noir les éléments impairs -->
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>Item 1 (Gras / Impair)</li>
+      <li>Item 2 (Pair)</li>
+      <li>Item 3 (Souligné / Impair)</li>
     </ul>
 
-    <!-- Exercice 10 — Sélecteurs combinés (niveau avancé)
-    Objectif : combiner plusieurs règles
-    Consigne :
-    Styliser uniquement .description dans .card
-    Styliser les p sauf .description
-    Écris un sélecteur qui cible uniquement le 2e paragraphe dans chaque .card"
-    Styliser le h3 uniquement s’il est dans .card -->
-    <div class="card">
-      <h3>Titre</h3>
-      <p class="description">Description</p>
-      <p>Autre texte</p>
+    <div class="card" style="margin-top: 20px; border: 1px solid #ddd; padding: 15px;">
+      <h3>Titre Carte</h3>
+      <p class="description">Ceci est la description en gris.</p>
+      <p>Autre texte avec bordure pointillée.</p>
     </div>
-
-  </main>
 </body>
-
 </html>

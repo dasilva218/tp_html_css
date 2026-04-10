@@ -1,158 +1,67 @@
-<!-- Exercice 1 — Les bases du texte
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercices - Textes</title>
+    <style>
+        /* Exercice 8 — Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
-Objectif : maîtriser les propriétés fondamentales
+        body { font-family: 'Roboto', sans-serif; padding: 40px; background-color: #fff; }
 
- À faire :
+        /* Exercice 1 & 2 — Bases et Transformations */
+        .p-base { color: #2c3e50; font-size: 18px; font-family: sans-serif; }
+        h1 { text-transform: uppercase; font-weight: bold; text-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
+        .italic { font-style: italic; }
 
-Créer un paragraphe <p>
-  Appliquer :
-  une couleur personnalisée
-  une taille de police de 18px
-  une police sans-serif
+        /* Exercice 3, 4 & 5 — Alignement et Espacement */
+        .center { text-align: center; }
+        .justify-spaced { 
+            text-align: justify; 
+            line-height: 2.0; 
+            word-spacing: 5px; 
+        }
+        .letter-spacing { letter-spacing: 5px; color: #e74c3c; }
 
-   Compétences :
-  color, font-size, font-family -->
+        /* Exercice 6 — Décoration */
+        a.custom-link { text-decoration: none; color: #3498db; }
+        a.custom-link:hover { text-decoration: underline; }
 
-<!-- Exercice 2 — Gras, italique, transformation
+        /* Exercice 10 — Carte Stylée */
+        .card-project {
+            border: 1px solid #eee;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 20px 0;
+        }
+        .card-project h2 { font-size: 1.5rem; margin-bottom: 5px; }
+        .card-project span { color: #95a5a6; font-size: 0.8rem; display: block; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <a href="../../index.html">← Retour</a>
 
-  Objectif : styliser le texte sans HTML inutile
+    <h1>Typographie & Style</h1>
+    <p class="p-base">Exercice 1 : Taille 18px et couleur personnalisée.</p>
+    <p class="italic">Exercice 2 : Texte mis en italique via CSS.</p>
 
-   À faire :
+    <div style="margin: 30px 0;">
+        <h2 class="letter-spacing">ESPACEMENT</h2>
+        <p class="justify-spaced">
+            Exercice 3, 4, 5 : Ce texte est justifié avec un interligne doublé (line-height: 2.0). 
+            L'espacement entre les mots est augmenté pour améliorer la clarté visuelle du bloc de texte.
+        </p>
+    </div>
 
-  Sur un titre
-<h1> :
-  mettre en majuscule
-  mettre en gras
-  Sur un paragraphe :
-  mettre en italique
+    <a href="#" class="custom-link">Lien sans soulignement (hover pour voir)</a>
 
-   Compétences :
-  text-transform, font-weight, font-style -->
-
-<!-- Exercice 3 — Alignement du texte
-
-  Objectif : contrôler la mise en page du contenu textuel
-
-   À faire :
-  Créer 3 paragraphes :
-
-  un aligné à gauche
-  un centré
-  un aligné à droite
-
-   Bonus :
-
-  Justifier un texte long
-
-   Compétence :
-  text-align -->
-
-<!-- Exercice 4 — Espacement entre les lignes
-
-  Objectif : améliorer la lisibilité
-
-   À faire :
-
-  Créer un paragraphe long
-  Augmenter l’espace entre les lignes
-
-   Compétence :
-  line-height -->
-
-<!-- Exercice 5 — Espacement des lettres et mots
-
-  Objectif : jouer sur le design typographique
-
-   À faire :
-
-  Sur un titre :
-  augmenter l’espace entre les lettres
-  Sur un paragraphe :
-  augmenter l’espace entre les mots
-
-   Compétences :
-  letter-spacing, word-spacing -->
-
-<!-- Exercice 6 — Soulignement et décoration
-
-  Objectif : styliser les liens ou éléments importants
-
-   À faire :
-
-  Créer un lien <a>
-    Modifier :
-    supprimer le soulignement
-    ajouter un soulignement au hover
-
-     Compétence :
-    text-decoration -->
-
-<!-- Exercice 7 — Ombre sur le texte
-
-    Objectif : ajouter un effet visuel
-
-     À faire :
-
-    Ajouter une ombre sur un titre
-
-     Exemple attendu :
-    ombre légère, pas un truc dégueu
-
-     Compétence :
-    text-shadow -->
-
-<!-- Exercice 8 — Police personnalisée (Google Fonts)
-
-    Objectif : utiliser une vraie typographie web
-
-     À faire :
-
-    Importer une police depuis Google Fonts
-    L’appliquer au body
-
-     Compétence :
-    @import ou
-    <link> + font-family -->
-
-<!-- Exercice 9 — Hiérarchie typographique
-
-    Objectif : structurer un contenu comme un pro
-
-     À faire :
-    Créer une page avec :
-
-    un <h1>
-      un <h2>
-        un <p>
-
-           Contraintes :
-
-          tailles différentes
-          couleurs cohérentes
-          espacement entre les blocs
-
-           Compétence :
-          Hiérarchie visuelle + lisibilité -->
-
-<!-- Exercice 10 — Carte stylée (mini projet)
-
-          Objectif : combiner tout ce que tu viens de voir
-
-          À faire :
-          Créer une carte avec :
-
-          un titre
-          un sous-titre
-          un paragraphe
-          un lien
-
-           Contraintes :
-
-          belle typo
-          bon spacing
-          hover sur le lien
-          lisibilité propre
-
-           Compétences :
-           combinaison de toutes les propriétés
-           cohérence visuelle -->
+    <div class="card-project">
+        <h2>Titre Article</h2>
+        <span>Publié par NEJDev241</span>
+        <p>La hiérarchie visuelle est respectée ici grâce aux tailles de polices et aux couleurs cohérentes.</p>
+        <a href="#" class="custom-link">Lire la suite</a>
+    </div>
+</body>
+</html>
