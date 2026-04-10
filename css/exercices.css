@@ -8,4 +8,91 @@
       color: rgb(4, 13, 141);
     }
  
-   
+    /* ── Exercice 2 — Sélecteur universel ── */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+ 
+    section {
+      margin-bottom: 2rem;
+    }
+     /* ── Exercice 3 — Sélecteur descendant ── */
+    .container p {
+      color: green;
+    }
+ 
+    /* ── Exercice 4 — Sélecteur enfant direct ── */
+    .container > p {
+      color: red;
+    }
+    /* ── Exercice 5 — Sélecteur adjacent ── */
+    h2 + p {
+      font-weight: bold;
+      color: orange;
+    }
+ 
+    /* ── Exercice 6 — Sélecteur général ── */
+    h2 ~ p {
+      text-decoration: underline;
+    }
+ 
+    /* ── Exercice 7 — Sélecteurs d'attributs ── */
+    input[type="text"] {
+      border: 2px solid blue;
+      padding: 4px 8px;
+    }
+ 
+    input[placeholder] {
+      background-color: #f0f0f0;
+    }
+     /* ── Exercice 8 — Pseudo-classes ── */
+    li:hover {
+      color: purple;
+      cursor: pointer;
+    }
+ 
+    li:first-child {
+      font-weight: bold;
+      color: green;
+    }
+ 
+    li:last-child {
+      font-style: italic;
+      color: red;
+    }
+ 
+    /* ── Exercice 9 — nth-child ── */
+    li:nth-child(even) {
+      background-color: #d0d0d0;
+    }
+ 
+    li:nth-child(odd) {
+      background-color: #1a1a1a;
+      color: white;
+    }
+ 
+    /* ── Exercice 10 — Sélecteurs combinés ── */
+    .card .description {
+      color: darkcyan;
+      font-style: italic;
+    }
+ 
+    .card p:not(.description) {
+      color: tomato;
+    }
+ 
+    .card p:nth-child(2) {
+      font-weight: bold;
+    }
+ 
+    .card h3 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
