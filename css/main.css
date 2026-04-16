@@ -1,0 +1,105 @@
+/*debut exercice 1*/
+
+h1{
+    color: rgb(190, 13, 48);
+}
+
+.text{
+    color: blue;
+}
+
+#title{
+    text-transform: uppercase;
+}
+/*fin exercice1*/
+
+/*debut exercice 2*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*fin exercice 2*/
+
+/*debut exercice 3*/
+.container{
+    color: darkgreen;
+}
+/*fin exercice 3*/
+
+/*debut exercice 4*/
+.container > p{
+    background-color: rgb(218, 60, 49);
+}
+/*fin exercice 4*/
+
+/*debut exercice 5*/
+h2+p{
+    font-size: x-large;
+    font-style: italic;
+}
+/*fin exercice 5*/
+
+/*debut exercice*/
+h2 ~ p{
+    
+    text-decoration: underline;
+}
+/*fin exercice 6*/
+
+/*debut exercice 7*/
+input[type=text] {
+    font-size: 10px;
+    background-color: rgb(234, 13, 241);
+}
+input[placeholder] {
+    font-size: larger;
+}
+/*fin exercice 7*/
+
+/*debut exercice 8*/
+ul:hover {
+    color: aqua;
+}
+ul :first-child {
+    font-size: x-large;
+}
+ul :last-child{
+    font-size: x-large;
+}
+/*fin exercice 8*/
+
+/*debut exercice 9*/
+ul :nth-child(even) {
+    background-color: gray;
+}
+
+ul :nth-child(odd){
+    background-color: black;
+}
+/*fin exercice 9*/
+
+/*debut exercice 10*/
+h3 + p{
+    color: rebeccapurple;
+}
+
+div :last-child{
+font-size: xx-large;
+color: rgb(167, 220, 20);
+}
+
+/*
+#fer{
+
+}
+*/
+
+h3:hover{
+    color: rgb(24, 94, 10);
+    font-size: x-large;
+    height: 20px;
+
+}
+
+/*fin exercice 10*/

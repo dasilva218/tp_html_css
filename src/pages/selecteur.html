@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  <link rel="stylesheet" href="/css/main.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>les sélecteurs</title>
@@ -39,7 +40,7 @@
     Styliser uniquement les p enfants directs de .container en rouge
     Ne pas toucher aux p imbriqués plus profondément -->
     <section class="container">
-      <p>Paragraphe dans container</p>
+        <p>Paragraphe dans container</p>
       <div>
         <p>Paragraphe imbriqué dans container</p>
       </div>
@@ -98,9 +99,11 @@
     <div class="card">
       <h3>Titre</h3>
       <p class="description">Description</p>
-      <p>Autre texte</p>
+      <p id="fer">Autre texte</p>
     </div>
-
+    
+    <input type="checkbox" id="monid">
+    <label for="monid">clique</label>
   </main>
 </body>
 

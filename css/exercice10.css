@@ -1,0 +1,31 @@
+/*debut exercice 10 carte stylée*/
+*{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+#sous{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.font{
+    line-height: 40px;
+    letter-spacing:1px;
+
+}
+
+
+#ver:hover{
+    color: rgba(93, 93, 248, 0.658);
+    font-size: x-large;
+}
+/*fin exercice10*/

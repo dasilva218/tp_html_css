@@ -1,0 +1,71 @@
+/*debut exercice 1 les bases du texte*/
+
+*{  
+    font-family: "Saira Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+p{
+    color: royalblue;
+    font-size: 18px;
+    font-family: "saira stencil", sans-serif;
+}
+/*fin exercice 1*/
+
+/*debut exercice 2 gras,itallique,transformation*/
+h1{
+    text-transform: initial;
+    text-decoration: underline;
+    font-style: italic;
+}
+/*fin exercice 2*/
+
+/*debut exercice 3 alignement du texte*/
+section :first-child {
+    text-align: right;
+}
+#p1{
+    text-align: center;
+}
+section :last-child{
+    text-align: left;
+}
+/*fin exercice 3*/
+
+/* debut execice 4 espacement entre les lignes*/
+.long{
+    line-height: 20px;
+}
+/*fin exercice 4*/
+
+/*debut exercice 5 espacement entre les lettres et mots*/
+h2{
+    letter-spacing: 5px;
+}
+h2+p{
+    word-spacing: 10px;
+}
+/*fin exercice 5*/
+
+/*debut exercice 6 soulignement et décoration*/
+.lien {
+    text-decoration: none;
+    }
+.lien:hover{
+    text-decoration: underline;
+}
+/*fin exercice 6 */    
+
+/*debut exercice 7 ombre sur le texte*/
+h3 {
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #009988;
+    color: #e0ffff;
+}
+/*fin exercice 7*/
+
+/*debut exercice 8 police personnaliée google fonts */
+
+/*fin exercice8*/
