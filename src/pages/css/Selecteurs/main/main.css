@@ -1,0 +1,73 @@
+main{
+    background-color: white;
+}
+
+#title{
+    color: red;
+    text-transform: uppercase;
+}
+
+.text{
+    color: blue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+  color: green; 
+}
+
+.container>p{
+    color: red;
+}
+
+h2~p{
+    color: aqua;
+}
+
+input[type="text"]{
+    color: blueviolet;
+}
+
+input::placeholder{
+    color: blue;
+    font-style: italic;
+}
+
+li:hover{
+    background-color: aqua;
+    transform: scale(1.05);
+}
+
+
+li:first-child{
+    color: brown;
+}
+
+li:last-child{
+    color: brown;
+}
+
+li:nth-child(even){
+    color: gray;
+}
+
+li:nth-child(odd){
+    color: black;
+}
+
+.description{
+    font-style: italic;
+}
+
+div{
+    p+p{
+      color: aqua;
+    }
+
+    h3{
+      color: mediumorchid;  
+    }
+}
