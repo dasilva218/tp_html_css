@@ -1,0 +1,119 @@
+<!-- Exercice 1 — Import simple d’une police (niveau débutant)
+
+Objectif : comprendre comment intégrer une police externe.
+
+Consigne :
+
+Intègre la police Roboto depuis Google Fonts.
+Applique-la à tout le texte de la page.
+
+Contraintes :
+
+Utiliser
+<link> dans le HTML
+Appliquer la police sur body
+
+Exercice 2 — Gestion des fallback (niveau débutant +)
+
+Objectif : maîtriser les polices de secours.
+
+Consigne :
+
+Utilise la police Open Sans
+Ajoute une pile de fallback cohérente
+
+Contraintes :
+
+Exemple attendu :
+font-family: 'Open Sans', Arial, sans-serif;
+
+Challenge :
+
+Teste en désactivant la police principale dans le navigateur
+
+Exercice 3 — Import local avec @font-face (niveau intermédiaire)
+
+Objectif : comprendre le fonctionnement réel des polices en production.
+
+Consigne :
+
+Télécharge une police (ex: Poppins)
+Intègre-la localement avec @font-face
+
+Contraintes :
+
+Fournir au moins 2 formats (.woff2, .woff)
+Définir :
+font-family
+src
+font-weight
+
+Exemple attendu :
+
+@font-face {
+font-family: 'Poppins';
+src: url('./fonts/poppins.woff2') format('woff2'),
+url('./fonts/poppins.woff') format('woff');
+font-weight: normal;
+}
+
+Exercice 4 — Gestion des variantes (niveau intermédiaire +)
+
+Objectif : gérer plusieurs styles (bold, italic, etc.)
+
+Consigne :
+
+Intègre 3 variantes d’une même police :
+Regular
+Bold
+Italic
+
+Contraintes :
+
+Utiliser plusieurs @font-face
+Appliquer chaque style à différents éléments :
+h1 → bold
+p → normal
+em → italic
+
+Exercice 5 — Optimisation et bonnes pratiques (niveau avancé)
+
+Objectif : travailler comme en production.
+
+Consigne :
+
+Intègre une police personnalisée
+Optimise son chargement
+
+Contraintes :
+
+Utiliser font-display: swap
+Limiter le nombre de variantes
+Charger uniquement les subsets nécessaires (latin par exemple)
+Éviter les ralentissements (FOIT / FOUT)
+
+Bonus (niveau senior) :
+
+Comparer les performances entre :
+Google Fonts
+Police locale
+Justifier ton choix dans un commentaire -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>bold</h1>
+  <p>Lorem ipsum, <em>italic</em> dolor sit amet consectetur adipisicing elit. Laboriosam ipsum aperiam quas est
+    voluptatem dolorem reiciendis at odit aliquid. Sapiente ad obcaecati recusandae accusantium debitis error animi
+    culpa quas cum?</p>
+  <p>normal</p>
+  <p>lorem</p>
+</body>
+
+</html>

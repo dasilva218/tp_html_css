@@ -1,0 +1,96 @@
+Exercice 1 — Grille basique (structure simple)
+
+Objectif : comprendre display: grid et grid-template-columns
+
+👉 Consigne :
+
+Crée un conteneur avec 6 blocs (div)
+Affiche-les en 3 colonnes égales
+Ajoute un espace entre les éléments
+
+👉 Contraintes :
+
+.container {
+  display: grid;
+}
+
+👉 Attendu :
+
+3 colonnes
+Les éléments s’alignent automatiquement
+
+🔹 Exercice 2 — Layout type blog
+
+Objectif : utiliser grid-template-areas
+
+👉 Consigne :
+Crée une page avec :
+
+un header
+un sidebar
+un contenu principal
+un footer
+
+👉 Structure attendue :
+
+header header
+sidebar main
+footer footer
+
+👉 Contraintes :
+
+Utiliser grid-template-areas
+Chaque bloc doit être nommé (grid-area)
+
+🔹 Exercice 3 — Grille responsive automatique
+
+Objectif : maîtriser repeat, auto-fit et minmax
+
+👉 Consigne :
+
+Crée une galerie d’images (ou cartes)
+Les éléments doivent s’adapter automatiquement à la taille de l’écran
+
+👉 Contraintes :
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+👉 Attendu :
+
+Sur grand écran → plusieurs colonnes
+Sur mobile → 1 colonne
+
+🔹 Exercice 4 — Positionnement avancé
+
+Objectif : manipuler grid-column et grid-row
+
+👉 Consigne :
+
+Crée une grille de 4 colonnes
+Fais en sorte que :
+le premier élément prenne 2 colonnes
+le deuxième prenne 2 lignes
+les autres s’adaptent
+
+👉 Exemple attendu :
+
+Un effet type dashboard / Pinterest
+
+🔹 Exercice 5 — Layout complexe (type landing page)
+
+Objectif : combiner tout ce que tu as vu
+
+👉 Consigne :
+Créer une page avec :
+
+header
+section hero (pleine largeur)
+3 cartes alignées
+une section avec image + texte (2 colonnes)
+footer
+
+👉 Contraintes :
+
+Utiliser Grid uniquement (pas de flexbox ici)
+Gérer les espacements avec gap
+Structure propre et scalable
