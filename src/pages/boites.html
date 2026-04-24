@@ -1,3 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/boites.css">
+    <title>Boites</title>
+</head>
+<body>
+   <!-- ── Exercice 1 ── -->
+  <section>
+    
+    <div class="ex1-box"></div>
+    <p class="note">
+      Taille totale = 200px (width) + 20px×2 (padding) + 5px×2 (border) = 250px de large.
+      La margin de 30px crée un espace autour de la boîte mais ne fait pas partie de sa taille.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 2 ── -->
+  <section>
+    
+    <div class="ex2-box"></div>
+    <p class="note">
+      Avec box-sizing: border-box, la boîte reste à 200px. Le padding et la bordure sont inclus
+      dans cette largeur au lieu de s'ajouter en dehors.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 3 ── -->
+  <section>
+    
+    <button class="ex3-btn">Texte centré</button>
+    <p class="note">
+      padding: 10px (haut) 30px (droite) 5px (bas) 50px (gauche).
+      Sens des aiguilles d'une montre : top → right → bottom → left.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 4 ── -->
+  <section>
+    
+    <div class="ex4-box">Div 1 — margin: 50px</div>
+    <div class="ex4-box">Div 2 — margin: 50px</div>
+    <p class="note">
+      L'espace entre les deux divs est 50px, pas 100px. Les marges verticales fusionnent :
+      le navigateur garde la plus grande, pas la somme des deux.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 5 ── -->
+  <section>
+    
+    <div class="ex5-box">Div centrée avec margin: 0 auto</div>
+    <p class="note">
+      margin: 0 auto fonctionne uniquement si l'élément est block et a une width définie.
+      Le navigateur répartit l'espace restant de façon égale à gauche et à droite.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 6 ── -->
+  <section>
+    
+    <div class="ex6-card">
+      <h3>Titre de la carte</h3>
+      <p>Carte avec border de 2px, border-radius de 10px et padding de 20px.</p>
+    </div>
+  </section>
+ 
+  <!-- ── Exercice 7 ── -->
+  <section>
+    
+    <div class="ex7-row">
+      <div class="ex7-item">
+        <span class="ex7-tag">overflow: hidden</span>
+        <div class="ex7-box ex7-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim reiciendis aspernatur animi possimus voluptatibus soluta aperiam atque fuga iste aliquid sequi tempore.</div>
+      </div>
+      <div class="ex7-item">
+        <span class="ex7-tag">overflow: scroll</span>
+        <div class="ex7-box ex7-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim reiciendis aspernatur animi possimus voluptatibus soluta aperiam atque fuga iste aliquid sequi tempore.</div>
+      </div>
+      <div class="ex7-item">
+        <span class="ex7-tag">overflow: auto</span>
+        <div class="ex7-box ex7-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim reiciendis aspernatur animi possimus voluptatibus soluta aperiam atque fuga iste aliquid sequi tempore.</div>
+      </div>
+    </div>
+    <p class="note">
+        coupe le contenu. scroll = barre toujours visible. 
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 8 ── -->
+  <section>
+    
+    <span class="ex8-span">Je suis un span (inline) — width et margin ignorés</span>
+    <div class="ex8-div">Je suis une div (block) — width et margin respectés</div>
+    <p class="note">
+      Le span est inline : il ignore width et les marges verticales.
+      La div est block : elle respecte tout et force un retour à la ligne.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 9 ── -->
+  <section>
+    
+    <div class="ex9-container">
+      <div class="ex9-col">Colonne 1</div>
+      <div class="ex9-col">Colonne 2</div>
+      <div class="ex9-col">Colonne 3</div>
+    </div>
+    <p class="note">
+      Sans box-sizing: border-box, padding + border s'ajoutent aux 33.33% → débordement.
+      Avec border-box, tout reste dans les 33.33%.
+    </p>
+  </section>
+ 
+  <!-- ── Exercice 10 ── -->
+  <section>
+    
+    <div class="ex10-card">
+      <img class="ex10-img" src="../images/téléchargement 5.jpg" alt="Produit">
+      <div class="ex10-body">
+        <h3>Nom du produit</h3>
+        <p>Description courte avec padding propre, bordure et coins arrondis.</p>
+        <button class="ex10-btn">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
 <!-- Exercice 1 — Comprendre la structure
 
 Crée une div avec :

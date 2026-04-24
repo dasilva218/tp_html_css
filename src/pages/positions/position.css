@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #964f4f;
+  color: white;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+/* SECTION */
+section {
+  margin-bottom: 40px;
+}
+
+/* EXERCICE 1 */
+.ex1 {
+  position: static;
+  background: gray;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+/* EXERCICE 2 */
+.ex2 {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background: pink;
+  padding: 20px;
+}
+
+/* EXERCICE 3 */
+.ex3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.a {
+  background: rgb(240, 240, 247);
+  z-index: 1;
+}
+
+.b {
+  background: rgb(8, 0, 0);
+  top: -50px;
+  left: 50px;
+  z-index: 2;
+}
+
+/* EXERCICE 4 */
+.parent {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: gray;
+}
+
+.child {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: yellow;
+}
+
+/* EXERCICE 5 */
+.card {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: gray;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  padding: 5px;
+}
+
+/* EXERCICE 6 */
+.container {
+  position: relative;
+  height: 200px;
+  background: gray;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: purple;
+  padding: 20px;
+}
+
+/* EXERCICE 7 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 15px;
+  text-align: center;
+}
+
+/* EXERCICE 8 */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* EXERCICE 9 */
+.sticky {
+  position: sticky;
+  top: 0;
+  background: green;
+  padding: 10px;
+}
+
+/* EXERCICE 10 */
+.layout-card {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: gray;
+}
+
+.layout-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  padding: 5px;
+}

@@ -1,6 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/unites.css">
+    <title>unites</title>
+</head>
+<body>
+  
+  <p class="page-title">Exercices CSS</p>
+  <h1 class="page-heading">Les <span>unités</span></h1>
+
+  <!-- ── Exercice 1 ── -->
+  <section>
+    <h2 class="label">01 — px vs %</h2>
+    <div class="ex1-parent">
+      <div class="ex1-px">width: 250px — fixe</div>
+      <div class="ex1-pourcent">width: 50% — relatif au parent</div>
+    </div>
+    <p class="note">
+      Les deux font 250px car le parent fait 500px.
+      Réduis le parent → le % s'adapte, le px reste fixe.
+    </p>
+  </section>
+
+  <!-- ── Exercice 2 ── -->
+  <section>
+    <h2 class="label">02 — em (cumulatif)</h2>
+    <p class="ex2-p">
+      2em = 32px
+      <span class="ex2-span"> → span 1.5em = 48px</span>
+    </p>
+    <p class="note">
+      em est relatif au parent direct. Le span hérite des 32px du paragraphe
+      et les multiplie par 1.5 → effet cumulatif non voulu.
+    </p>
+  </section>
+
+  <!-- ── Exercice 3 ── -->
+  <section>
+    <h2 class="label">03 — rem (stable)</h2>
+    <p class="ex3-p">
+      2rem = 32px
+      <span class="ex3-span"> → span 1.5rem = 24px</span>
+    </p>
+    <p class="note">
+      rem est toujours relatif au body (16px). Pas d'effet cumulatif —
+      bien plus prévisible que em.
+    </p>
+  </section>
+
+  <!-- ── Exercice 4 ── -->
+  <section>
+    <h2 class="label">04 — Layout responsive avec %</h2>
+    <div class="ex4-container">
+      <div class="ex4-col">col — 33%</div>
+      <div class="ex4-col">col — 33%</div>
+      <div class="ex4-col">col — 33%</div>
+    </div>
+    <p class="note">
+      3 colonnes de 33% + 1% de gap. box-sizing: border-box
+      évite les débordements liés au padding.
+    </p>
+  </section>
+
+  <!-- ── Exercice 5 ── -->
+  <section>
+    <h2 class="label">05 — Hauteur avec vh</h2>
+    <div class="ex5-section">
+      <p>
+        Centré verticalement et horizontalement
+        <span>height: 100vh</span>
+      </p>
+    </div>
+    <p class="note">
+      100vh = 100% de la hauteur visible du navigateur.
+      Flexbox centre le contenu dans les deux axes.
+    </p>
+  </section>
+
+  <!-- ── Exercice 6 ── -->
+  <section>
+    <h2 class="label">06 — Largeur avec vw</h2>
+    <div class="ex6-wrapper">
+      <div class="ex6-banner">Bannière en 100vw — pleine largeur de l'écran</div>
+    </div>
+    <p class="note">
+      100vw inclut la scrollbar → peut créer un scroll horizontal.
+      overflow: hidden sur le wrapper corrige ça.
+    </p>
+  </section>
+
+  <!-- ── Exercice 7 ── -->
+  <section>
+    <h2 class="label">07 — Mélange d'unités</h2>
+    <div class="ex7-card">
+      <strong>width: 60%</strong> → flexible selon l'écran.<br>
+      <strong>padding: 2rem</strong> → stable, relatif au body.<br>
+      <strong>border-radius: 12px</strong> → précis et fixe.
+    </div>
+    <p class="note">
+      px pour les détails précis, rem pour les espacements, % pour les largeurs.
+    </p>
+  </section>
+
+  <!-- ── Exercice 8 ── -->
+  <section>
+    <h2 class="label">08 — Typographie responsive avec vw</h2>
+    <h1 class="ex8-titre">Titre en 5vw — réduis la fenêtre</h1>
+    <p class="note">
+      5vw = 5% de la largeur de l'écran. S'adapte automatiquement
+      mais sans limites min/max.
+    </p>
+  </section>
+
+  <!-- ── Exercice 9 ── -->
+  <section>
+    <h2 class="label">09 — clamp()</h2>
+    <p class="ex9-texte">
+      Ce texte ne sera jamais plus petit que 16px ni plus grand que 24px.
+      Entre les deux, il s'adapte à 2vw. Réduis la fenêtre pour observer.
+    </p>
+    <p class="note">
+      clamp(minimum, préféré, maximum) — typo responsive sans media queries.
+    </p>
+  </section>
+
+  <!-- ── Exercice 10 ── -->
+  <section>
+    <h2 class="label">10 — Carte produit responsive</h2>
+    <div class="ex10-card">
+      <img src="../images/téléchargement 1.jpg" alt="Produit">
+      <div class="ex10-body">
+        <h3>Nom du produit</h3>
+        <p>Largeur 90% / max 360px. Padding en rem. Texte en rem. Bouton en em.</p>
+        <button class="ex10-btn">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+
 <!-- 
 🔹 Exercice 1 — Différence px vs %
-
 Crée une div parent de 500px de largeur.
 À l’intérieur, crée deux blocs :
 
