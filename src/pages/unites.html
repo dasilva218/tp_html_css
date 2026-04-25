@@ -1,3 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unités</title>
+    <link rel="stylesheet" href="/CSS/unites.css">
+</head>
+<body>
+    <div class="parent">
+
+        <div class="bloc-px">
+         Bloc fixe
+        </div>
+
+        <div class="bloc-pct">
+         Bloc relatif
+        </div>
+
+    </div>
+
+    <p class="texte-em">
+       Paragraphe en 2em
+         <span class="span-em">span en 1.5em</span>
+    </p>
+
+    <p class="texte-rem">
+        Paragraphe en 2rem
+        <span class="span-rem">span en 1.5rem</span>
+    </p>
+
+    <!--  Version en % : -->
+    <div class="conteneur-broken">
+         <div class="colonne-broken">Colonne 1</div>
+         <div class="colonne-broken">Colonne 2</div>
+         <div class="colonne-broken">Colonne 3</div>
+    </div>
+
+    <!-- ✅ Version corrigée : CSS Grid -->
+    <div class="conteneur-grid">
+         <div class="colonne-grid">Colonne 1</div>
+         <div class="colonne-grid">Colonne 2</div>
+         <div class="colonne-grid">Colonne 3</div>
+    </div>
+
+    <section class="section-hero">
+        <div class="hero-content">
+            <h2>Bienvenue</h2>
+            <p>Section plein écran</p>
+        </div>
+    </section>
+
+    <div class="banner">       
+       <div class="banniere">
+          <span>Banniere</span>
+       </div>
+    </div>
+
+    <div class="carte">
+      <h3 class="carte-titre">Titre de la carte</h3>
+      <p class="carte-texte">Chaque propriété utilise l'unité la </br> plus adaptée à son rôle dans l'interface.</p>
+      <span class="carte-badge">width en %,</span>
+      <span class="carte-badge">padding en rem,</span>
+      <span class="carte-badge">radius en px.</span>
+    </div>
+
+    <h1 class="titre-vw">Titre responsive</h1>
+    <p class="sous-titre-vw">Sous-titre aussi en vw</p>
+
+    <h2 class="titre-clamp">Titre avec clamp</h2>
+    <p class="texte-clamp">Paragraphe avec clamp</p>
+
+    <div class="carte-produit">
+
+       <div class="carte-image">
+          <div class="carte-image-icone">🎧</div>
+       </div>
+
+       <div class="carte-corps">
+            <h2 class="carte-titre">Casque Studio Pro</h2>
+            <p class="carte-descr">Son haute-fidélité, réduction de</br> bruit active, autonomie 40h.</br> Conçu pour les créateurs exigeants.</p>
+            <div class="carte-footer">
+               <span class="carte-prix">100000XAF</span>
+               <button class="carte-bouton">Ajouter au panier</button>
+            </div>
+       </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
 <!-- 
 🔹 Exercice 1 — Différence px vs %
 

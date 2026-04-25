@@ -1,0 +1,105 @@
+.boite-fond {
+  width:  300px;
+  height: 150px;
+  background-color: #3b82f6;
+}
+
+.boite-image {
+  width:  400px;
+  height: 200px;
+  background-image:    url('image.jpg');
+  background-repeat:   no-repeat; 
+  background-position: center;
+}
+
+.boite-cover {
+  width:  100%;
+  height: 220px;
+  background-image:    url('image.jpg');
+  background-repeat:   no-repeat;
+  background-position: center;
+  background-size:     cover;
+}
+
+.boite-degrade {
+  width:  100%;
+  height: 120px;
+  background: linear-gradient(to right, #ef4444, #eab308);
+}
+
+.boite-degrade-avance {
+  width:  100%;
+  height: 140px;
+  background: linear-gradient(135deg, #6366f1, #ec4899, #f97316);
+}
+
+.boite-bordure {
+  width:  280px;
+  height: 100px;
+  border: 2px solid #111;
+}
+
+.boite-4-bordures {
+  width:  280px;
+  height: 100px;
+  border-top:    4px solid #ef4444;
+  border-right:  4px solid #22c55e; 
+  border-bottom: 4px solid #3b82f6;  
+  border-left:   4px solid #eab308;
+}
+
+.carte-arrondie {
+  width:         280px;
+  padding:       1.5rem;
+  border:        2px solid #6366f1;
+  border-radius: 20px;
+  background:    #f5f3ff;
+}
+
+.cercle {
+  width:            150px;
+  height:           150px; 
+  border-radius:    50%;
+  background-color: #ec4899;
+}
+
+.card {
+  width:         300px;
+  background:    #ffffff;         
+  border:        1px solid #e2e8f0;
+  border-radius: 16px;            
+  overflow:      hidden;
+}           
+
+.card-image {
+  width:                 100%;
+  height:                160px;
+  background-image:     url('image.jpg');
+  background-size:      cover;
+  background-repeat:    no-repeat;
+}
+
+.card-body { padding: 1.25rem; }
+
+.card-title {
+  font-size:     1rem;
+  font-weight:   700;
+  color:         #0f172a;
+  margin-bottom: .5rem;
+}
+
+.card-text {
+  font-size:     13px;
+  color:         #64748b;
+  line-height:   1.6;
+  margin-bottom: 1rem;
+}
+
+.card-btn {
+  padding:       .5rem 1.2rem;
+  background:    #6366f1;
+  color:         #fff;
+  border:        none;
+  border-radius: 8px;
+  cursor:        pointer;
+}

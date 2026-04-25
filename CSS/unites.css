@@ -1,0 +1,143 @@
+
+body {
+  font-size: 16px;  
+}
+.parent {
+  width: 500px;         
+  background: #03031d;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloc-px {
+  width: 250px;         
+  height: 54px;
+  background: #4f46e5;
+}
+
+.bloc-pct {
+  width: 50%;           
+  height: 54px;         
+  background: #e11d48;
+}
+
+
+.texte-em {
+  font-size: 2em;     /*  taille finale 2 × 16px = 32px */
+  color: #2563eb;
+}
+
+.texte-em .span-em {
+  font-size: 1.5em;  /* 1.5 × 32px = 48px pour le parent = p, pas body ! */
+  color: #dc2626;
+}
+
+
+
+.texte-rem {
+  font-size: 2rem;     /* 2 × 16px = 32px , on se refere toujours au body */
+  color: #2563eb;
+}
+
+.texte-rem .span-rem {
+  font-size: 1.5rem;  /* 1.5 × 16px = 24px ← parent = p, pas body !, ici rem ignore l'imbrication */
+  color: #dc2626;
+}
+
+/* Version en % — padding + border s'ajoutent à width */
+.colonne-broken {
+  float: left;
+  width: 33.33%;   /* 33.33 × 3 = 99.99% ← ok ici */
+  padding: 16px;   /* +32px par colonne ← DEBORDEMENT */
+  border: 2px solid; /* +4px par colonne ← encore plus */
+}
+
+/* ✅ CORRIGÉ — gap ne déborde pas */
+.conteneur-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 1fr = espace disponible ÷ 3 */
+  gap: 12px;
+                /* n'affecte pas la largeur des colonnes */
+}
+
+.colonne-grid {
+  padding: 16px;    /* box-sizing: border-box gere ça */
+  border: 2px solid #22c55e;
+  background-color: yellow;
+}
+
+.section-hero {
+  height: 100vh;          /* 100% de la hauteur fenetre */
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  background-color: #2563eb; 
+}
+
+.banner {
+  overflow: hidden;  
+}
+
+.banniere {
+  width: 100%;      /* 100vw causerait un scroll de ~15px */
+  background: linear-gradient(90deg, #be185d, #db2777);
+  padding: 1rem 1.5rem;
+}
+
+.carte {
+  width: 60%;           /* %  s'adapte au parent */
+  padding: 1.5rem;      /* rem lié à la typographie */
+  border-radius: 16px;  /* px arrondi fixe, ne doit pas varier */
+  background-color: aqua;
+}
+
+.titre-vw {
+  font-size: 5vw; /* 5% de la largeur fenêtre */
+}                   /* 320px → 16px | 768px → 38px | 1440px → 72px */
+
+.sous-titre-vw {
+  font-size: 2vw; /* 2% de la largeur fenêtre */
+}
+
+.titre-clamp {
+  font-size: clamp(1.25rem, 4vw, 3rem);
+  /*          ↑ min      ↑ fluide  ↑ max */
+}
+
+.texte-clamp {
+  font-size: clamp(16px, 2vw, 24px);
+  /* compris entre 16px et 24px */
+}
+
+.carte-produit {
+  width: 90%;           /* % — fluide sur tous les ecrans */
+  max-width: 400px;     /* px — plafond fixe */
+  border-radius: 16px;  /* px — arrondi fixe */
+  background-color: rgb(228, 210, 188);
+}
+
+.carte-image  {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #2563eb; 
+}
+        
+.carte-corps  {
+    padding: 1.5rem;
+}   /* rem — coherent avec la typo */
+
+.carte-titre  {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.carte-bouton {
+    padding: 0.6em 1.4em; 
+    background-color: #2563eb;
+    border-radius: 16px; 
+} /* em — proportionnel au bouton */
+    

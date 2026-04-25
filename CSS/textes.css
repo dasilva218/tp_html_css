@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.section1 p {
+    color: blue;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+
+.section2 h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.section2 p {
+    font-style: italic;
+    color: #b51616;
+}
+
+.section3 p:nth-child(1){
+    text-align: right;
+}
+.section3 p:nth-child(2){
+    text-align: center;
+}
+.section3 p:nth-child(3){
+    text-align: left;
+}
+
+.section4 p {
+    line-height: 1.5;
+}
+
+.section5 h1{
+    letter-spacing: 0.15em;
+
+}
+
+.section5 p {
+    font-size: 22px;
+    word-spacing: 12px;
+}
+
+.section6 a {
+    text-decoration: none;
+    transition: 300ms ease;
+
+}
+
+.section6 a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.section7 h1 {
+    
+    text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(105, 105, 250);
+}
+
+.ex1-paragraphe {
+  color: red;
+}
+
+.ex3-nommee {
+  color: blue;
+}
+
+.ex3-hex {
+  color: #056bb0;
+}
+
+.ex4-rouge {
+     color: rgb(255,   0,   0); 
+}
+
+.ex4-vert  { 
+    color: rgb(  0, 200,  80);
+} 
+
+.ex4-bleu  { color: rgb(  0,  80, 220);
+} 
+
+.ex5-conteneur {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.ex6-rouge  {
+     color: hsl(0, 80%, 50%); 
+}
+
+.ex6-clair  { 
+    color: hsl(0, 80%, 72%);
+}
+
+.ex6-sombre { 
+    color: hsl(0, 80%, 28%);
+}
+
+.ex7-bouton {
+  background-color: #3b82f6;
+  color: #fff;
+  transition: background-color .25s;
+}
+
+.ex7-bouton:hover {
+  background-color: #16a34a;
+}
+
+.ex8-primaire   { 
+    background-color: #3b82f6;
+}
+
+.ex8-secondaire { 
+    background-color: #8b5cf6;
+}
+
+.ex8-accent { 
+    background-color: #f97316;
+}
+
+.ex8-fond { 
+    background-color: #f1f5f9;
+}
+
+.ex8-texte { 
+    background-color: #1e293b;
+}
+
+.ex9-body-sim {
+  background: linear-gradient(to right, blue, purple);
+  height: 100px;
+  border-radius: 8px;
+}
+
+.ex10-card {
+    align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0; 
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.ex10-titre {
+  color: #3b82f6;
+}
+
+.ex10-texte {
+  color: #94a3b8;
+}
+
+.ex10-bouton {
+  background-color: #3b82f6;
+  color: #fff;
+  transition: background-color .2s;
+}
+
+.ex10-bouton:hover {
+  background-color: #1d4ed8; 
+}

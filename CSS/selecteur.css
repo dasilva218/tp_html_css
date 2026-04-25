@@ -1,0 +1,90 @@
+@import url(/CSS/global.css);
+
+
+
+#title{
+    color: red;
+    text-transform: uppercase;
+}
+
+.text{
+    color: blue;
+}
+
+.container p {
+    color: green;
+}
+
+.container>p{
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+h2+p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2~p {
+    font-size: 26px;
+}
+
+input[type=text]{
+    font-size: 17px;
+    font-weight: bold;
+   background-color: aqua;
+   color: white;
+}
+
+input[placeholder]{
+    border : 2px solid;
+    background-color:blue
+}
+
+Li:first-child {
+    color: rgba(222, 233, 18, 0.822);
+    font-size: 20px;
+}
+
+Li:last-child {
+    font-size: 22px;
+}
+
+Li:nth-child(odd){
+    color:black;
+}
+Li:nth-child(even){
+    color:rgb(101, 83, 83);
+}
+
+li {
+    font-weight: bolder;
+    transition: 0,3ms ease;
+    cursor: pointer;
+
+}
+
+Li:hover {
+    color: rgb(16, 16, 110);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.card .description {
+    color: rgb(125, 18, 226);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.card p:nth-child(3){
+    font-size: 20px;
+    color: rgb(10, 168, 241);
+    font-weight: bolder;
+}
+
+.card h3{
+    font-size: 32px;
+}
