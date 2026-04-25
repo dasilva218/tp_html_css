@@ -8,12 +8,16 @@ Les différentes pages d’exercices se trouvent dans l’arborescence suivante 
 
 src/
 └── pages/
+    └── positions/
+    └── grilles/
+    └── polices/
 selecteur
 textes
 fond_bordure
 couleurs
 boites
 unites
+flexbox
 
 ### Consignes
 
@@ -30,7 +34,10 @@ Exercice 4 = fond_bordure
 Exercice 5 = couleurs
 Exercice 6 = boites
 Exercice 7 = unites
-
+Exercice 8 = flexbox
+Exercice 9 = positions
+Exercice 10 = grilles
+Exercice 11 = polices
 
 
 Chaque lien doit permettre d'accéder à la page correspondante dans le dossier `pages`.

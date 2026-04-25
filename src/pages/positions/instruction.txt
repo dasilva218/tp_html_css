@@ -1,0 +1,118 @@
+🔹 Exercice 1 — Comprendre static (le comportement par défaut)
+
+Objectif : Observer le flux normal
+
+Crée 3 blocs <div>
+Applique position: static sur tous
+Ajoute des marges
+
+👉 Résultat attendu : comportement classique, aucun effet spécial.
+
+🔹 Exercice 2 — Décalage avec relative
+
+Objectif : Comprendre le décalage sans sortir du flux
+
+Crée un bloc
+Applique :
+position: relative;
+top: 20px;
+left: 30px;
+
+👉 Le bloc se décale, mais son espace d’origine reste occupé
+
+🔹 Exercice 3 — Superposition simple
+
+Objectif : Utiliser relative + z-index
+
+Crée deux blocs qui se chevauchent
+Mets :
+position: relative;
+z-index: 1;
+
+👉 Joue avec z-index pour contrôler l’ordre d’empilement
+
+🔹 Exercice 4 — Introduction à absolute
+
+Objectif : Sortir un élément du flux
+
+Crée un parent + un enfant
+Applique :
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+👉 L’enfant se positionne dans le parent, pas dans la page
+
+🔹 Exercice 5 — Badge sur une carte
+
+Objectif : Cas réel UI
+
+Crée une carte produit
+Ajoute un badge "Promo" en haut à droite
+
+👉 Utilise position: absolute
+
+🔹 Exercice 6 — Centrage avec absolute
+
+Objectif : Centrer un élément proprement
+
+Crée un conteneur
+Centre un élément avec :
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+👉 Technique indispensable en UI
+
+🔹 Exercice 7 — Menu fixe (fixed)
+
+Objectif : Créer une navbar persistante
+
+Crée une navbar
+Applique :
+position: fixed;
+top: 0;
+width: 100%;
+
+👉 Elle reste visible même en scroll
+
+🔹 Exercice 8 — Bouton flottant
+
+Objectif : UI moderne (type WhatsApp)
+
+Crée un bouton en bas à droite :
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+👉 Cas très utilisé en production
+
+🔹 Exercice 9 — Sticky header
+
+Objectif : Comprendre sticky
+
+Crée une page avec du scroll
+Ajoute un header :
+position: sticky;
+top: 0;
+
+👉 Il devient fixe uniquement après scroll
+
+🔹 Exercice 10 — Layout complet (challenge)
+
+Objectif : Combiner tout
+
+Crée une page avec :
+
+Une navbar fixed
+Un header sticky
+Une carte avec badge absolute
+Un bouton flottant fixed
+
+👉 Là tu passes de “je connais” à “je maîtrise”
